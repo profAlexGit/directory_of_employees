@@ -1,0 +1,16 @@
+.d-flex {
+  display: flex; }
+
+.disabled-btn {
+  opacity: 0.2; }
+
+.employeeList {
+  flex: 1; }
+
+.form-container {
+  width: 30%;
+  padding: 1rem; }
+
+.side-panel {
+  width: 30%; }
+
