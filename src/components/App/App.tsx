@@ -4,12 +4,13 @@ import {useStores} from '../../hooks/use-stores';
 import {ActionPanel} from '../ActionPanel';
 import EmplyeeList from '../EmployeeList/EmployeeList';
 import {EmployeerInfoContainer} from '../EmployeerInfoContainer';
+import {Spinner} from '../Spinner';
 
 const App: FC = () => {
 	const {employeeStore} = useStores();
 
 	if (employeeStore.isLoading) {
-		return null;
+		return <Spinner />;
 	}
 
 	return (
