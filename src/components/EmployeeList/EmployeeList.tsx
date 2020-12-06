@@ -3,6 +3,7 @@ import {observer} from 'mobx-react-lite';
 import {useStores} from '../../hooks/use-stores';
 import List from '@material-ui/core/List';
 import {EmployeeItem} from '../EmplyeeItem';
+import { Spinner } from '../Spinner';
 
 const EmplyeeList: FC = observer(() => {
 	const {employeeStore} = useStores();
@@ -16,7 +17,7 @@ const EmplyeeList: FC = observer(() => {
 	};
 
 	if (employeeStore.isLoading) {
-		return null;
+		return <Spinner />;
 	}
 	
 	return (
