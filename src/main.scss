@@ -1,7 +1,16 @@
-body {
-	background-color: green;
+.d-flex {
+    display: flex;
+}
 
-	h1 {
-		font-size: 30px;
-	}
+.disabled-btn {
+    opacity: 0.2;
+}
+
+.employeeList {
+    flex: 1
+}
+
+.form-container {
+    width: 30%;
+    padding: 1rem;
 }

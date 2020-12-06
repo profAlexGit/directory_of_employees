@@ -1,6 +1,6 @@
 export enum EPosition {
-	developer = '',
-	project_manager = '',
-	analyst = '',
+	developer = 'разработчик',
+	project_manager = 'менеджер проекта',
+	analyst = 'аналитик',
 	tester = 'тестировщик',
 }
